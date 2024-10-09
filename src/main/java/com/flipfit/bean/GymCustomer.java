@@ -6,7 +6,7 @@ package com.flipfit.bean;
 /**
  *
  */
-public class GymCustomer extends AbstractUser {
+public class GymCustomer extends User {
   public int paymentType;
   public String paymentInfo;
 
