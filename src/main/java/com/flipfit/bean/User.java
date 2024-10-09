@@ -1,24 +1,57 @@
 package com.flipfit.bean;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-/**
- * This class represents a User in the GymFlipFit application.
- * It stores user information such as user ID, name, contact details, address, location, email, and password.
- */
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
 public class User {
-  private int userId; // Unique identifier for the user
+  private int userID;
+  private int roleID;
+  private String emailID;
+  private String password;
+  private String userName;
+  private String phoneNumber;
+  public String getEmailID() {
+    return emailID;
+  }
 
-  private String userName; // User's name
-  private String phoneNumber; // User's phone number
-  private String address; // User's address
-  private String location; // User's location
-  private String email; // User's email address
-  private String password; // User's password
+  public void setEmailID(String emailID) {
+    this.emailID = emailID;
+  }
+  public String getPassword() {
+    return password;
+  }
 
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public int getRoleID() {
+    return roleID;
+  }
+
+  public void setRoleID(int roleID) {
+    this.roleID = roleID;
+  }
+
+  public int getUserID() {
+    return userID;
+  }
+
+  public void setUserID(int userID) {
+    this.userID = userID;
+  }
+
+
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
+  public String getUserName() {
+    return userName;
+  }
+
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
 }
